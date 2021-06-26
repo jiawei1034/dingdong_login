@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="    viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="login">
+        <h1>Register</h1>
+        <h2>Email </h2>
+        <input type="email" id="email" /><h2>
+        Password </h2>
+        <input type="password" id="password" /><br />
+        <p onclick="location.href='Signin.html';">Already have account? Login</p>
+        <button class="sign-btn"id="register">Sign Up</button>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use-->
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-auth.js"></script>
+    
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+        apiKey: "AIzaSyCQBrL-ArCkF5g-k3ulwWqoMYGSStdiKU4",
+        authDomain: "dingdong-19111.firebaseapp.com",
+        projectId: "dingdong-19111",
+        storageBucket: "dingdong-19111.appspot.com",
+        messagingSenderId: "358755506237",
+        appId: "1:358755506237:web:9e18a061d7096a77393254",
+        measurementId: "G-66WVFY6GC4"
+      };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="script.js"></script>
+
+</body>
+</html>
